@@ -6,7 +6,7 @@ PARALLELIZE_FLAGS = -fopenmp
 all : exec
 
 exec : exact_cover
-	./$< --in ../instances/bell13.ec --progress-report 0 
+	./$< --in ../instances/matching8.ec --progress-report 0 
 
 exact_cover : exact_cover.c
 	$(CC) $(CFLAGS) $(PARALLELIZE_FLAGS) -o $@ $<
